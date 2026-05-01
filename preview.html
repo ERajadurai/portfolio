@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E. Rajadurai | Portfolio</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;background:#f6f5f0;color:#222;line-height:1.7}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1100px,92%);margin:auto}
+    header{position:sticky;top:0;background:rgba(246,245,240,.94);border-bottom:1px solid #ddd;backdrop-filter:blur(10px);z-index:10}
+    nav{height:70px;display:flex;justify-content:space-between;align-items:center}
+    .logo{font-weight:700;letter-spacing:.5px}
+    .nav{display:flex;gap:24px;font-size:14px;color:#555}
+    .nav a:hover{color:#111}
+    .hero{min-height:calc(100vh - 70px);display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 0}
+    .small{font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#555;margin-bottom:18px}
+    h1{font-size:clamp(58px,10vw,120px);line-height:.95;letter-spacing:-5px;font-weight:800;color:#222}
+    .hero p{max-width:760px;margin:24px auto 0;font-size:20px;color:#444}
+    .btns{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:38px}
+    .btn{border:1px solid #555;border-radius:999px;padding:12px 24px;font-weight:600;font-size:14px;background:transparent;transition:.2s}
+    .btn:hover{background:#222;color:#fff}
+    section{padding:80px 0}
+    .title{margin-bottom:34px}
+    .title span{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:#666;font-weight:700}
+    .title h2{font-size:38px;margin-top:8px;color:#222;letter-spacing:-1px}
+    .title p{max-width:760px;color:#555;margin-top:8px}
+    .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{background:#fff;border:1px solid #ddd;border-radius:22px;padding:26px;box-shadow:0 12px 30px rgba(0,0,0,.04)}
+    .card h3{font-size:21px;margin-bottom:8px;color:#222}
+    .card p{color:#555}
+    .skill-tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+    .tag{border:1px solid #ddd;border-radius:999px;padding:7px 13px;background:#fafafa;color:#444;font-size:14px;font-weight:600}
+    .project-tech{font-size:13px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.7px;margin:8px 0 12px}
+    .timeline{display:grid;gap:18px}
+    .line{border-left:3px solid #222;padding-left:18px}
+    .line span{font-size:14px;color:#666;font-weight:700}
+    .contact{background:#222;color:#fff;border-radius:28px;padding:42px}
+    .contact p,.contact a{color:#ddd}
+    .contact h2{color:#fff}
+    footer{text-align:center;padding:26px;color:#666;border-top:1px solid #ddd}
+    @media(max-width:800px){.grid2,.grid3{grid-template-columns:1fr}.nav{display:none}h1{letter-spacing:-2px}.title h2{font-size:30px}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a class="logo" href="#home">E. Rajadurai</a>
+      <div class="nav">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div>
+        <div class="small">Software Developer Portfolio</div>
+        <h1>RAJADURAI</h1>
+        <p>Python Developer • Machine Learning Engineer • Full Stack Developer</p>
+        <div class="btns">
+          <a class="btn" href="#projects">View Work</a>
+          <a class="btn" href="mailto:rajega2428@gmail.com">Contact</a>
+          <a class="btn" target="_blank" href="https://github.com/ERajadurai">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <div class="title">
+        <span>About</span>
+        <h2>Building practical AI, ML and full stack solutions</h2>
+        <p>Motivated software developer with internship experience in Python, Machine Learning, Django, Java full stack development, NLP, deep learning, predictive analytics and databases.</p>
+      </div>
+      <div class="grid2">
+        <div class="card">
+          <h3>Professional Summary</h3>
+          <p>Detail-oriented Software Developer skilled in AI/ML models, NLP, deep learning, predictive analytics, Java, web technologies and databases.</p>
+        </div>
+        <div class="card">
+          <h3>Education</h3>
+          <p><b>B.E. Civil Engineering</b><br>Arasu Engineering College, Kumbakonam | 2015 - 2019<br>CGPA: 6.5</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="container">
+      <div class="title">
+        <span>Skills</span>
+        <h2>Technical Skills</h2>
+        <p>Technologies used for software development, AI/ML models, backend systems and web applications.</p>
+      </div>
+      <div class="grid2">
+        <div class="card"><h3>Programming Languages</h3><div class="skill-tags"><span class="tag">Python</span><span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">SQL</span></div></div>
+        <div class="card"><h3>Machine Learning & AI</h3><div class="skill-tags"><span class="tag">Scikit-learn</span><span class="tag">TensorFlow</span><span class="tag">Keras</span><span class="tag">CNN</span><span class="tag">NLP</span><span class="tag">Pandas</span><span class="tag">NumPy</span></div></div>
+        <div class="card"><h3>Backend Development</h3><div class="skill-tags"><span class="tag">Django</span><span class="tag">Spring Boot</span><span class="tag">Node.js</span><span class="tag">REST APIs</span><span class="tag">Core Java</span></div></div>
+        <div class="card"><h3>Database & Tools</h3><div class="skill-tags"><span class="tag">MySQL</span><span class="tag">JDBC</span><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Jupyter</span><span class="tag">VS Code</span></div></div>
+      </div>
+    </section>
+
+    <section id="projects" class="container">
+      <div class="title">
+        <span>Projects</span>
+        <h2>Selected Projects</h2>
+        <p>AI, machine learning, NLP, deep learning and Java application development projects.</p>
+      </div>
+      <div class="grid3">
+        <div class="card"><h3>AI Chatbot — College Website</h3><div class="project-tech">Python • Django • NLP</div><p>Developed an intelligent chatbot to help students with admissions, courses and campus information.</p></div>
+        <div class="card"><h3>X-Ray Disease Prediction System</h3><div class="project-tech">CNN • SVM • Random Forest</div><p>Built a medical imaging classification system using ML/DL algorithms.</p></div>
+        <div class="card"><h3>E-Commerce Review Sentiment Analysis</h3><div class="project-tech">Python • NLP • ML</div><p>Implemented sentiment classification for product reviews.</p></div>
+        <div class="card"><h3>AI Startup Success Prediction</h3><div class="project-tech">Python • ML</div><p>Developed a model to estimate startup success probability.</p></div>
+        <div class="card"><h3>Telecom Customer Churn Prediction</h3><div class="project-tech">Python • Classification</div><p>Built a churn prediction system to identify at-risk customers.</p></div>
+        <div class="card"><h3>Hotel Management System</h3><div class="project-tech">Java • OOP</div><p>Room booking, food ordering and availability management system.</p></div>
+      </div>
+    </section>
+
+    <section id="experience" class="container">
+      <div class="title">
+        <span>Experience</span>
+        <h2>Work & Internship Experience</h2>
+      </div>
+      <div class="card timeline">
+        <div class="line"><h3>Python & Machine Learning Intern — DLK Software Solutions</h3><span>2023 - 2024 | Chennai</span><p>Developed ML models, NLP sentiment analysis, chatbot and disease prediction systems.</p></div>
+        <div class="line"><h3>Business Development Associate — BYJU'S</h3><span>2022 | Coimbatore</span><p>Presented educational products and maintained client relationships.</p></div>
+        <div class="line"><h3>Site Engineer — Innovative Construction</h3><span>2021 - 2022 | Thanjavur</span><p>Managed site activities and coordinated project execution.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <div class="contact">
+        <div class="title">
+          <span style="color:#aaa">Contact</span>
+          <h2>Let's Connect</h2>
+          <p>Open to Python Developer, Machine Learning Engineer and Full Stack Developer opportunities.</p>
+        </div>
+        <p>Email: <a href="mailto:rajega2428@gmail.com">rajega2428@gmail.com</a></p>
+        <p>Phone: 9655787529</p>
+        <p>GitHub: <a target="_blank" href="https://github.com/ERajadurai">github.com/ERajadurai</a></p>
+        <p>LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/rajadurai-e-06782a26a/">linkedin.com/in/rajadurai-e-06782a26a</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 E. Rajadurai. Portfolio Website.</footer>
+</body>
+</html>
